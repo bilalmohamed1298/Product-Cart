@@ -32,7 +32,12 @@ export default class Child extends Component {
             ) : (
               ""
             )}
-
+            <button
+              onClick={() => this.props.double(this.props.productInfo)}
+              className="btn btn-outline-danger w-50"
+            >
+              Double
+            </button>
             <button
               onClick={() => this.props.plus(this.props.productInfo)}
               className="btn btn-outline-danger w-50"
