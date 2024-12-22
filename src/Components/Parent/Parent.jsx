@@ -13,7 +13,8 @@ export default class Parent extends Component {
       {id:7,name:'Redmi',model:'D432',category:'mobile',count:0,number:23535,onSale:true},
     ]
   };
-
+ 
+    func = ()=>{}
 
   doubleProduct = (product) => {
     let newProducts = [...this.state.products]
