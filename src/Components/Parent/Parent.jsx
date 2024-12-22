@@ -14,7 +14,7 @@ export default class Parent extends Component {
     ]
   };
  
-    func = ()=>{}
+    func = (arameter)=>{}
 
   doubleProduct = (product) => {
     let newProducts = [...this.state.products]
