@@ -70,7 +70,12 @@ export default class Parent extends Component {
     ],
   };
 
-
+  doubleProduct = (product) => {
+    let newProducts = [...this.state.products];
+    let index = newProducts.indexOf(product);
+    newProducts.splice(index + 1, 0, newProducts[index]);
+    this.setState({ products: newProducts });
+  };
 
   plus = (product) => {
     let newProducts = [...this.state.products];
