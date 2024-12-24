@@ -98,9 +98,9 @@ export default class Parent extends Component {
       <>
         <div className="container bg-dark text-dark p-3">
           <div className="row g-3">
-            {this.state.products.map((product) => (
+            {this.state.products.map((product, index) => (
               <Child
-                key={product.id}
+                key={index}
                 plus={this.plus}
                 delete={this.delete}
                 double={this.doubleProduct}
