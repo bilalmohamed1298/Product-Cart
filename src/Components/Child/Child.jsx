@@ -33,7 +33,7 @@ export default class Child extends Component {
               <b>Product Count:</b> {count}
             </h6>
             {onSale === true ? (
-              <div className="sale bg-danger p-2 mx-2 text-white position-absolute top-0 end-0 ">
+              <div className="sale bg-success p-2 mx-2 text-white position-absolute top-0 end-0 ">
                 Sale
               </div>
             ) : (
@@ -41,13 +41,13 @@ export default class Child extends Component {
             )}
             <button
               onClick={() => this.props.plus(this.props.productInfo)}
-              className="btn btn-outline-danger w-100 my-2"
+              className="btn btn-outline-success w-100 my-2"
             >
               Count+
             </button>
             <button
               onClick={() => this.props.delete(id)}
-              className="btn btn-outline-danger w-100"
+              className="btn btn-outline-success w-100"
             >
               Delete
             </button>

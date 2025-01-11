@@ -91,12 +91,11 @@ export default class Parent extends Component {
     this.setState({ products });
   };
 
-  componentDidUpdate(props, state){
-    console.log(state)
+  componentDidUpdate(props, state) {
+    console.log(state);
   }
 
   render() {
-
     return (
       <>
         <div className="min-vh-100 container bg-dark text-dark p-4">

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Parent from "./Components/Parent/Parent";
 import { BrowserRouter, Route, Routes } from "react-router";
 
-
 export default class App extends Component {
   render() {
     return (
@@ -14,7 +13,6 @@ export default class App extends Component {
               <Route path="parent" element={<Parent />} />
             </Routes>
           </BrowserRouter>
-
         </div>
       </>
     );
