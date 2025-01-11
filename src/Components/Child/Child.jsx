@@ -1,6 +1,13 @@
 import React, { Component } from "react";
 
 export default class Child extends Component {
+
+
+  componentWillUnmount(){
+    console.log("One Child Removed...")
+  }
+
+  
   render() {
     let { id, name, model, category, number, count, onSale } =
       this.props.productInfo;
@@ -33,14 +40,8 @@ export default class Child extends Component {
               ""
             )}
             <button
-              onClick={() => this.props.double(this.props.productInfo)}
-              className="btn btn-outline-danger w-50"
-            >
-              Double
-            </button>
-            <button
               onClick={() => this.props.plus(this.props.productInfo)}
-              className="btn btn-outline-danger w-50"
+              className="btn btn-outline-danger w-100 my-2"
             >
               Count+
             </button>

@@ -10,22 +10,22 @@ export default class Parent extends Component {
         model: "D432",
         category: "mobile",
         count: 0,
-        number: 23535,
+        number: 22935,
         onSale: true,
       },
       {
         id: 2,
         name: "Nokia",
-        model: "D432",
+        model: "Fd2",
         category: "mobile",
         count: 0,
-        number: 23535,
+        number: 27635,
         onSale: false,
       },
       {
         id: 3,
         name: "Iphone 14",
-        model: "D432",
+        model: "Ds32",
         category: "mobile",
         count: 0,
         number: 23535,
@@ -34,37 +34,37 @@ export default class Parent extends Component {
       {
         id: 4,
         name: "Oppo",
-        model: "D432",
+        model: "Y42",
         category: "mobile",
         count: 0,
-        number: 23535,
+        number: 22335,
         onSale: true,
       },
       {
         id: 5,
         name: "Infinex",
-        model: "D432",
+        model: "R2",
         category: "mobile",
         count: 0,
-        number: 23535,
+        number: 25635,
         onSale: false,
       },
       {
         id: 6,
         name: "Xaomi",
-        model: "D432",
+        model: "Tw5",
         category: "mobile",
         count: 0,
-        number: 23535,
+        number: 27835,
         onSale: false,
       },
       {
         id: 7,
         name: "Redmi",
-        model: "D432",
+        model: "A2",
         category: "mobile",
         count: 0,
-        number: 23535,
+        number: 21335,
         onSale: true,
       },
     ],
@@ -91,13 +91,16 @@ export default class Parent extends Component {
     this.setState({ products });
   };
 
+  componentDidUpdate(props, state){
+    console.log(state)
+  }
+
   render() {
-    console.log("Render");
-    console.log(this.state.products);
+
     return (
       <>
-        <div className="container bg-dark text-dark p-3">
-          <div className="row g-3">
+        <div className="min-vh-100 container bg-dark text-dark p-4">
+          <div className="row g-3 mt-3">
             {this.state.products.map((product, index) => (
               <Child
                 key={index}
