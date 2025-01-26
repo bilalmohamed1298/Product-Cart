@@ -1,4 +1,4 @@
-# 🖥️ Product Cart
+# Product Cart
 
 An engaging and dynamic product cart built with React.js components for seamless interactivity.
 
